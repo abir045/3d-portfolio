@@ -23,10 +23,13 @@ import {
   starbucks,
   tesla,
   shopify,
+  aust,
+  uia,
   carrent,
   jobit,
   tripguide,
   threejs,
+  uiaWhite,
 } from "../assets";
 
 export const navLinks = [
@@ -169,6 +172,36 @@ const experiences = [
   },
 ];
 
+const educations = [
+  {
+    title: "M.Sc in Information & Communication Technology",
+    company_name: "University Of Agder, Norway",
+    icon: uiaWhite,
+    iconBg: "#383E56",
+    date: "aug 2014 - jun 2016",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+
+  {
+    title: "B.Sc in Electrical & Electronic Engineering",
+    company_name: "Ahsanullah University Of Science & Technology, Bangladesh",
+    icon: aust,
+    iconBg: "#383E56",
+    date: "april 2007 - April 2011",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
+
 const testimonials = [
   {
     testimonial:
@@ -262,4 +295,11 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  educations,
+  experiences,
+  testimonials,
+  projects,
+};
