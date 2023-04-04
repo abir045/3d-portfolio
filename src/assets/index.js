@@ -6,6 +6,11 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import javascriptLogo from "./javascriptLogo.png";
+import api from "./api.png";
+import apiConf from "./apiConf.png";
+import webTemplate from "./webTemplate.png";
+import reactLogo from "./reactLogo.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -59,4 +64,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  javascriptLogo,
+  api,
+  apiConf,
+  webTemplate,
+  reactLogo,
 };
