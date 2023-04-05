@@ -30,6 +30,12 @@ import {
   tripguide,
   threejs,
   uiaWhite,
+  coffeeroasters,
+  pearson,
+  photosnap,
+  manage,
+  netflix_clone,
+  crypto,
 } from "../assets";
 
 export const navLinks = [
@@ -110,10 +116,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -231,12 +233,70 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Coffeeroasters",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A Web-based platform that allows users to search  and order coffee according to their choice from various options,providing a convenient and efficient solution for coffee needs.",
     tags: [
       {
         name: "react",
+        color: "blue-text-gradient",
+      },
+
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: coffeeroasters,
+    source_code_link: "https://github.com/abir045/coffeeroasters",
+    live_url: "https://coffeeroasters-abir045.vercel.app/",
+  },
+  {
+    name: "Photosnap ",
+    description:
+      " A Multipage Web application that enables users to share photos",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: photosnap,
+    source_code_link: "https://github.com/abir045/photosnap",
+    live_url: "https://photosnap-abir045.vercel.app/",
+  },
+  {
+    name: "CryptoWorld",
+    description:
+      "A crypto info app  that allows users to view stats based on Coinranking api from RapidAPI.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "chart js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: crypto,
+    source_code_link: "https://github.com/abir045/cryptoApp",
+  },
+  {
+    name: "Pearson Airport Limousiness",
+    description:
+      "A limousine rental app  that allows users to book a limousine to and fro to  Pearson Airport Toronto.",
+    tags: [
+      {
+        name: "Express JS",
         color: "blue-text-gradient",
       },
       {
@@ -244,54 +304,58 @@ const projects = [
         color: "green-text-gradient",
       },
       {
+        name: "googleapis",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pearson,
+    source_code_link: "https://github.com/abir045/LomousineTours",
+  },
+
+  {
+    name: "Manage Landing Page",
+    description: "A Frontend Mentor challenge landing page from figma design.",
+    tags: [
+      {
+        name: "JS",
+        color: "blue-text-gradient",
+      },
+
+      {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: manage,
+    source_code_link:
+      "https://github.com/abir045/frontend-mentor-manage-landing-react-tailwind",
+
+    live_url:
+      "https://frontend-mentor-manage-landing-react-tailwind.vercel.app/",
   },
+
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "Netflix UI clone",
+    description: "Netflix UI clone with React and Tailwind CSS.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
+
       {
-        name: "restapi",
+        name: "firebase",
         color: "green-text-gradient",
       },
+
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: netflix_clone,
+    source_code_link: "https://github.com/abir045/Netflix_React_Tailwind",
+    live_url: "https://github.com/abir045/Netflix_React_Tailwind",
   },
 ];
 

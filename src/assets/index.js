@@ -11,6 +11,7 @@ import api from "./api.png";
 import apiConf from "./apiConf.png";
 import webTemplate from "./webTemplate.png";
 import reactLogo from "./reactLogo.png";
+import url from "./url.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -37,6 +38,13 @@ import uiaWhite from "./uiaWhite.jpg";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import coffeeroasters from "./coffeeroasters.png";
+import photosnap from "./photosnap.png";
+import crypto from "./crypto.png";
+import pearson from "./pearson.jpg";
+import manage from "./manage_landing.png";
+import netflix_clone from "./netflix_clone.png";
 
 export {
   logo,
@@ -75,4 +83,11 @@ export {
   uia,
   aust,
   uiaWhite,
+  coffeeroasters,
+  photosnap,
+  crypto,
+  pearson,
+  manage,
+  netflix_clone,
+  url,
 };
