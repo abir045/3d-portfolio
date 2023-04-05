@@ -12,7 +12,7 @@ import {fadeIn, textVariant} from '../utils/motion'
 const ProjectCard = ({index, name, description, tags, image, source_code_link, live_url}) => (
 
 <motion.div 
-variants={fadeIn("up", "spring", index * 0.5,  0.75)}
+variants={fadeIn("up", "spring", index * 0.5,  1)}
 >
  <Tilt
  options={{
@@ -81,6 +81,7 @@ const Works = () => {
   return (
     <>
     <motion.div 
+    
     variants={textVariant()}
     >
     <p className={styles.sectionSubText}>
@@ -94,7 +95,7 @@ const Works = () => {
 
     <div className='w-full flex'>
       <motion.p 
-      variants={fadeIn(", ", 0.1, 1)}
+      variants={fadeIn("" ,"" , 0.1, 1)}
       className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
       Following are some of my featured projects.
@@ -119,4 +120,4 @@ const Works = () => {
   )
 }
 
-export default  SectionWrapper(Works, "") 
+export default  SectionWrapper(Works, "work") 
