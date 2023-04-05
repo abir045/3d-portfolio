@@ -42,7 +42,7 @@ import tripguide from "./tripguide.png";
 import coffeeroasters from "./coffeeroasters.png";
 import photosnap from "./photosnap.png";
 import crypto from "./crypto.png";
-import pearson from "./pearson.jpg";
+import pearson from "./pearson.png";
 import manage from "./manage_landing.png";
 import netflix_clone from "./netflix_clone.png";
 
