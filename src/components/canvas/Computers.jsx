@@ -1,6 +1,9 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { useLoader } from "@react-three/fiber";
+
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 import CanvasLoader from "../Loader";
 
@@ -9,7 +12,10 @@ const Computers = ({isMobile}) => {
   // const computer = useGLTF('./the_night_owls_desk/scene.gltf')
   // const computer = useGLTF('./motherboard__components/scene.gltf')
   // const computer = useGLTF('./pc_gamer_animation/scene.gltf')
-  const computer = useGLTF('./gaming_desktop_pc/scene.gltf')
+  // const computer = useGLTF('./gaming_desktop_pc/scene.gltf')
+
+  const computer = useLoader(GLTFLoader, './gaming_desktop_pc_blend_file.glb')
+  
   // const computer = useGLTF('./desktop_pc/scene.gltf')
 
   return ( 

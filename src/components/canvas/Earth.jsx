@@ -3,10 +3,14 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+import { useLoader } from "@react-three/fiber";
+
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const Earth = () => {
-  const earth = useGLTF("./dream_computer_setup/scene.gltf");
-
+  // const earth = useGLTF("./dream_computer_setup/scene.gltf");
+  const earth = useLoader(GLTFLoader, './dream_computer_setup.glb')
+  
   return (
 
     <mesh>
