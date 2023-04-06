@@ -289,6 +289,7 @@ const projects = [
     ],
     image: crypto,
     source_code_link: "https://github.com/abir045/cryptoApp",
+    live_url: "https://world-of-crypto.netlify.app/",
   },
   {
     name: "Pearson Airport Limousiness",

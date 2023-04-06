@@ -5,14 +5,18 @@ import { Tilt } from 'react-tilt'
 import { github, url } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
-import {fadeIn, textVariant} from '../utils/motion'
+import {fadeIn, textVariant , slideIn} from '../utils/motion'
 
 
 
 const ProjectCard = ({index, name, description, tags, image, source_code_link, live_url}) => (
 
 <motion.div 
-variants={fadeIn("up", "spring", index * 0.5,  1)}
+
+variants={fadeIn("up", "spring",  0.2,  1)}
+// variants={slideIn("top", "tween",  0.2,  1)}
+// onClick={() => window.open(live_url , "blank")}
+
 >
  <Tilt
  options={{
@@ -24,14 +28,21 @@ variants={fadeIn("up", "spring", index * 0.5,  1)}
  className="bg-tertiary p-5 rouded-2xl sm:w-[360px] w-full"
  > 
  
- <div className='relative w-full h-[230px]'>
-  <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
+ <div className='relative w-full h-[230px]'
+ 
+ >
+  <img
   
-  <div className='absolute inset-0 flex space-x-2 items-start justify-end m-3 card-img_hover'>
+  
+  src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
+  
+  <div className='absolute inset-0 flex space-x-2 items-start justify-end m-3 card-img_hover'
+  
+  >
   {/* source_code_link */}
   <div 
   onClick={() => window.open(source_code_link , "blank")}
-  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-99'
   >
    <img
    src={github}

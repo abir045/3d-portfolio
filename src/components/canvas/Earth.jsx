@@ -15,6 +15,7 @@ const Earth = () => {
 
     <mesh>
        <ambientLight intensity={1.5} />
+       <directionalLight color="violet" position={[0, 0, 5]} />
       <hemisphereLight intensity={1.5} groundColor="white" />
       <pointLight intensity={1.5} />
       <spotLight
@@ -34,6 +35,7 @@ const Earth = () => {
 const EarthCanvas = () => {
   return (
     <Canvas
+    
       shadows
       frameloop='demand'
       dpr={[1, 2]}
@@ -44,6 +46,7 @@ const EarthCanvas = () => {
         far: 100,
         position: [-4, 3, 6],
       }}
+      
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
