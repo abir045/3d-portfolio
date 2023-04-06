@@ -12,7 +12,7 @@ const EducationCard = ({education}) => {
 return <VerticalTimelineElement
 contentStyle={{background: '#1d1835', color: '#fff'}}
 contentArrowStyle={{ borderRight: '7px solid #232631'}}
-date={education.date}
+// date={education.date}
 iconStyle={{ background: education.iconBg}}
 icon = {
   <div className='flex justify-center items-center w-full h-full'>
