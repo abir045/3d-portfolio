@@ -1,22 +1,31 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import CanvasLoader from "../Loader";
+
 
 const Computers = ({isMobile}) => {
   
   // const computer = useGLTF('./the_night_owls_desk/scene.gltf')
-  // const computer = useGLTF('./motherboard__components/scene.gltf')
-  // const computer = useGLTF('./pc_gamer_animation/scene.gltf')
-  // const computer = useGLTF('./gaming_desktop_pc/scene.gltf')
+    // const computer = useLoader(GLTFLoader, '/gaming_desktop_pc_blend_file.glb')
 
-  const computer = useLoader(GLTFLoader, './gaming_desktop_pc_blend_file.glb')
+// const gltfRef = useRef() ;
+
+ 
+const gltf =  useLoader(GLTFLoader, '/gaming.glb', (gltf) => {
+     const dracoLoader = new DRACOLoader() ;
+     dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/')
+    gltf.setDRACOLoader(dracoLoader)
+
+  }
   
-  // const computer = useGLTF('./desktop_pc/scene.gltf')
+ )
+
+  
 
   return ( 
     <mesh>
@@ -31,14 +40,17 @@ const Computers = ({isMobile}) => {
       shadow-mapSize={1024}      
       
       />
-      <primitive 
+
+        
+    <primitive 
       
-      object={computer.scene}
+      object = {gltf.scene}
+      // object={computer.scene}
       scale={ isMobile? 0.7 : 0.75}
       position={isMobile? [0,-3, -2.2] : [0,-3.25 , -1.5]}
       rotation={[-0.01, -0.2, -0.1]}
       />
-       
+          
       
     </mesh>
   )

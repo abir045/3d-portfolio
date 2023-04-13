@@ -12,8 +12,8 @@ import {fadeIn, textVariant , slideIn} from '../utils/motion'
 const ProjectCard = ({index, name, description, tags, image, source_code_link, live_url}) => (
 
 <motion.div 
-
-variants={fadeIn("up", "spring",  0.2,  1)}
+// variants={slideIn('left', 'tween', 0.2 ,1)}
+variants={slideIn("right", "tween",  0.1,  1)}
 // variants={slideIn("top", "tween",  0.2,  1)}
 // onClick={() => window.open(live_url , "blank")}
 
@@ -104,9 +104,9 @@ const Works = () => {
 
     </motion.div>
 
-    <div className='w-full flex'>
+    <div className='flex flex-col '>
       <motion.p 
-      variants={fadeIn("" ,"" , 0.1, 1)}
+      variants={slideIn("" ,"" , 0.1, 1)}
       className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
       Following are some of my featured projects.
@@ -115,7 +115,7 @@ const Works = () => {
   </motion.p>
     </div>
     
-    <div className='mt-20 flex flex-wrap gap-7'>
+    <div className='mt-20 flex flex-wrap gap-7 '>
         {projects.map((project, index)=> (
           <ProjectCard 
           key={`project-${index}`}

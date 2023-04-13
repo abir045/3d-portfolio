@@ -6,10 +6,23 @@ import CanvasLoader from "../Loader";
 import { useLoader } from "@react-three/fiber";
 
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 const Earth = () => {
   // const earth = useGLTF("./dream_computer_setup/scene.gltf");
-  const earth = useLoader(GLTFLoader, './dream_computer_setup.glb')
+  // const earth = useLoader(GLTFLoader, './dream_computer_setup.glb')
+
+
+  
+const gltf =  useLoader(GLTFLoader, '/dream.glb', (gltf) => {
+     const dracoLoader = new DRACOLoader() ;
+     dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/')
+    gltf.setDRACOLoader(dracoLoader)
+
+  }
+  
+ )
+  
   
   return (
 
@@ -27,7 +40,7 @@ const Earth = () => {
       shadow-mapSize={1024}      
       
       />
-    <primitive object={earth.scene} scale={0.25} position-y={0} rotation-y={0} />
+    <primitive object={gltf.scene} scale={0.25} position-y={0} rotation-y={0} />
     </mesh>
   );
 };
