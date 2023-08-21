@@ -3,7 +3,7 @@ import {motion} from "framer-motion"
 import { styles } from '../styles'
 // import { ComputersCanvas } from './canvas'
 import Lottie from 'lottie-react'
-import animationData from "../assets/animation.json"
+import animationData from "../assets/Desktop.json"
 
 const Hero = () => {
   return (
@@ -17,10 +17,10 @@ const Hero = () => {
 
        <div>
         <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className='text-[#915eff]'>Salekin</span></h1>
-        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+        {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
 
           I develop Frontend applications, <br className='sm:block hidden'/> UI and web apps based on Modern technology stacks 
-        </p>
+        </p> */}
         </div>
         </div>
       {/* <ComputersCanvas /> */}
