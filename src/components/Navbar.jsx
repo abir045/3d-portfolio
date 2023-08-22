@@ -70,19 +70,19 @@ const [toggle, setToggle] = useState(false);
        {/* social icons */}    
       
        <ul className='list-none  hidden sm:flex space-x-5'>
-       <li className='hover:bg-white'>
+       <li key="1" className='hover:bg-white'>
           <a href='https://github.com/abir045' target='_blank'>
             <img src={github} className='w-[50px]' />
           </a>
           </li>
 
-          <li className='hover:bg-white'>
+          <li key="2" className='hover:bg-white'>
           <a href='https://www.linkedin.com/in/salekinimran/' target='_blank'>
             <img src={linkedin} className='w-[50px]' />
           </a>
           </li>
 
-          <li className='hover:bg-white'>
+          <li key="3" className='hover:bg-white'>
           <a href='https://drive.google.com/file/d/19s3curyckE2gKBkoHRUGp0i4Tftx_0P5/view?usp=sharing' target='_blank'>
             <img src={cv} className='w-[50px]' />
           </a>
@@ -131,19 +131,19 @@ const [toggle, setToggle] = useState(false);
           })
         }
         
-        <li className='hover:bg-white'>
+        <li key= "4" className='hover:bg-white'>
           <a href='https://github.com/abir045' target='_blank'>
             <img src={github} className='w-[50px]' />
           </a>
           </li>
 
-          <li className='hover:bg-white'>
+          <li key="5" className='hover:bg-white'>
           <a href='https://www.linkedin.com/in/salekinimran/' target='_blank'>
             <img src={linkedin} className='w-[50px]' />
           </a>
           </li>
 
-          <li className='hover:bg-white'>
+          <li key="6" className='hover:bg-white'>
           <a href='https://drive.google.com/file/d/19s3curyckE2gKBkoHRUGp0i4Tftx_0P5/view?usp=sharing' target='_blank'>
             <img src={cv} className='w-[50px]' />
           </a>
@@ -153,19 +153,7 @@ const [toggle, setToggle] = useState(false);
        </ul>
 
         {/* <div > */}
-       <ul className='flex' >
-       {/* <li className='hover:bg-white'>
-          <a href='https://github.com/abir045' target='_blank'>
-            <img src={github} className='w-[50px]' />
-          </a>
-          </li>
-
-          <li className='hover:bg-white'>
-          <a href='https://www.linkedin.com/in/salekinimran/' target='_blank'>
-            <img src={linkedin} className='w-[50px]' />
-          </a>
-          </li> */}
-       </ul>
+       
        {/* </div>  */}
 
 

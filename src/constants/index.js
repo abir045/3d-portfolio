@@ -36,7 +36,9 @@ import {
   manage,
   netflix_clone,
   crypto,
-  github
+  laptop,
+
+  
 } from "../assets";
 
 export const navLinks = [
@@ -56,20 +58,7 @@ export const navLinks = [
   
 ];
 
-const services = [
-  {
-    title: "Web Developer",
-    icon: apiConf,
-  },
-  {
-    title: "Front End Developer",
-    icon: webTemplate,
-  },
-  {
-    title: "React Developer",
-    icon: reactLogo,
-  },
-];
+
 
 const technologies = [
   {
@@ -207,34 +196,29 @@ const educations = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+
 
 const projects = [
+  {
+    name: "Laptop Recommendation System",
+    description:
+      "A Web-based platform that allows users to search and find laptops according to their requirements from two local vendors (Ryans & StarTech), providing a convenient and efficient solution.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: laptop,
+    source_code_link: "https://github.com/abir045/Laptop-Recommendation-System",
+    live_url: "https://laptop-recommendation-system.vercel.app/",
+  },
+
   {
     name: "Coffeeroasters",
     description:
@@ -316,27 +300,27 @@ const projects = [
     source_code_link: "https://github.com/abir045/LomousineTours",
   },
 
-  {
-    name: "Manage Landing Page",
-    description: "A Frontend Mentor challenge landing page from figma design.",
-    tags: [
-      {
-        name: "JS",
-        color: "blue-text-gradient",
-      },
+  // {
+  //   name: "Manage Landing Page",
+  //   description: "A Frontend Mentor challenge landing page from figma design.",
+  //   tags: [
+  //     {
+  //       name: "JS",
+  //       color: "blue-text-gradient",
+  //     },
 
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: manage,
-    source_code_link:
-      "https://github.com/abir045/frontend-mentor-manage-landing-react-tailwind",
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: manage,
+  //   source_code_link:
+  //     "https://github.com/abir045/frontend-mentor-manage-landing-react-tailwind",
 
-    live_url:
-      "https://frontend-mentor-manage-landing-react-tailwind.vercel.app/",
-  },
+  //   live_url:
+  //     "https://frontend-mentor-manage-landing-react-tailwind.vercel.app/",
+  // },
 
   {
     name: "Netflix UI clone",
@@ -364,10 +348,10 @@ const projects = [
 ];
 
 export {
-  services,
+  
   technologies,
   educations,
   experiences,
-  testimonials,
+  
   projects,
 };

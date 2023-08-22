@@ -45,6 +45,7 @@ import crypto from "./crypto.png";
 import pearson from "./pearson.png";
 import manage from "./manage_landing.png";
 import netflix_clone from "./netflix_clone.png";
+import laptop from './laptop.png';
 
 export {
   logo,
@@ -90,4 +91,5 @@ export {
   manage,
   netflix_clone,
   url,
+  laptop
 };
