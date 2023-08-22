@@ -91,29 +91,32 @@ variants={slideIn("up", "tween",  0.1,  1)}
 const Works = () => {
   return (
     <>
-    <motion.div 
     
+    <motion.div 
     variants={textVariant()}
     >
+      
     <p className={styles.sectionSubText}>
-        My Work
-      </p>
+      My Work
+    </p>
 
       <h2 className={styles.sectionHeadText}>Projects.</h2>
+      
+   
 
 
     </motion.div>
 
-    <div className='flex flex-col '>
+    {/* <div className='flex flex-col '> */}
       <motion.p 
-      variants={slideIn("up" ,"tween" , 0.1, 1)}
+      variants={fadeIn("" ,"" , 0.1, 1)}
       className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
       Following are some of my featured projects.
        Each project is briefly descriobed with links to code repositories and live demos in it.
 
   </motion.p>
-    </div>
+    {/* </div> */}
     
     <div className='mt-20 flex flex-wrap gap-7 '>
         {projects.map((project, index)=> (

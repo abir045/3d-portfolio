@@ -15,7 +15,7 @@ contentArrowStyle={{ borderRight: '7px solid #232631'}}
 // date={education.date}
 iconStyle={{ background: education.iconBg}}
 icon = {
-  <div className='flex justify-center items-center w-full h-full'>
+  <div className='flex justify-center items-center mt-[5%] w-full h-full'>
     <img
     src={education.icon}
     alt={education.title}
