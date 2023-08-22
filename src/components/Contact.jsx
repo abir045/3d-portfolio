@@ -8,9 +8,7 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 
 import { slideIn } from '../utils/motion' 
-// #service id = service_hcolugm
-//template_p0wvapy
-// public key 8hN5PSLDpnA2_QvIu
+
 
 const Contact = () => {
  const formRef = useRef() ;
@@ -66,7 +64,7 @@ const handleSubmit = (e) => {
 }
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:mt-12 xl:flex-row flex-col flex  overflow-hidden'>
   <motion.div
   variants={slideIn('left', 'tween', 0.2 ,1)}
   className='flex-[0.75] bg-black-100 p-8 rounded-2xl' 
@@ -79,7 +77,7 @@ const handleSubmit = (e) => {
    <form 
    ref={formRef}
    onSubmit= {handleSubmit}
-   className='mt-12 flex flex-col gap-8'
+   className='mt-12 flex flex-col'
    >
     {/* name */}
    <label className='flex flex-col'>
@@ -153,7 +151,7 @@ const handleSubmit = (e) => {
   className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
   >
 
-   <EarthCanvas />
+   {/* <EarthCanvas /> */}
   </motion.div>
 
   </div>

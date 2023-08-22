@@ -12,10 +12,10 @@ import {fadeIn, textVariant , slideIn} from '../utils/motion'
 const ProjectCard = ({index, name, description, tags, image, source_code_link, live_url}) => (
 
 <motion.div 
-// variants={slideIn('left', 'tween', 0.2 ,1)}
-variants={slideIn("right", "tween",  0.1,  1)}
-// variants={slideIn("top", "tween",  0.2,  1)}
-// onClick={() => window.open(live_url , "blank")}
+
+variants={slideIn("up", "tween",  0.1,  1)}
+
+
 
 >
  <Tilt

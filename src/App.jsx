@@ -1,5 +1,5 @@
 
-import { About, Contact, Education, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components"
+import { About, Contact, Education, Feedbacks, Hero, Navbar, Tech, Works, Footer } from "./components"
 import { BrowserRouter } from "react-router-dom"
 
 
@@ -18,11 +18,12 @@ function App() {
         <Education />
         <Tech />
         
-        {/* <Feedbacks /> */}
-        <div className="relative z-0">
+      
+        
            <Contact />
-           {/* <StarsCanvas /> */}
-        </div>
+           <Footer />
+           
+        
       </div>
     </BrowserRouter>
 

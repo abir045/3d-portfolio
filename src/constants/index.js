@@ -36,6 +36,7 @@ import {
   manage,
   netflix_clone,
   crypto,
+  github
 } from "../assets";
 
 export const navLinks = [
@@ -51,6 +52,8 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+
+  
 ];
 
 const services = [
