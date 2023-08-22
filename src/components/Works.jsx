@@ -13,10 +13,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, l
 
 <motion.div 
 
-variants={slideIn("up", "tween",  0.1,  1)}
-
-
-
+variants={slideIn("right", "tween",  0.1,  0.5)}
 >
  <Tilt
  options={{
@@ -92,25 +89,28 @@ const Works = () => {
   return (
     <>
     
-    <motion.div 
+    {/* <motion.div 
     variants={textVariant()}
-    >
+    > */}
       
-    <p className={styles.sectionSubText}>
+      <div className='flex flex-col'>
+      <p className={styles.sectionSubText}>
       My Work
     </p>
 
-      <h2 className={styles.sectionHeadText}>Projects.</h2>
+    <h2 className={styles.sectionHeadText}>Projects.</h2>
+      </div>
+    
       
    
 
 
-    </motion.div>
+    {/* </motion.div> */}
 
     {/* <div className='flex flex-col '> */}
       <motion.p 
-      variants={fadeIn("" ,"" , 0.1, 1)}
-      className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+      variants={slideIn("down" ,"tween" , 0.1, 1)}
+      className='text-secondary text-[17px] max-w-3xl mb-5'
       >
       Following are some of my featured projects.
        Each project is briefly descriobed with links to code repositories and live demos in it.
@@ -118,7 +118,7 @@ const Works = () => {
   </motion.p>
     {/* </div> */}
     
-    <div className='mt-20 flex flex-wrap gap-7 '>
+    <div className='grid grid-cols-1 md:grid-cols-3 '>
         {projects.map((project, index)=> (
           <ProjectCard 
           key={`project-${index}`}
