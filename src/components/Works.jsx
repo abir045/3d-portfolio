@@ -106,7 +106,7 @@ const Works = () => {
 
     <div className='flex flex-col '>
       <motion.p 
-      variants={slideIn("" ,"" , 0.1, 1)}
+      variants={slideIn("up" ,"tween" , 0.1, 1)}
       className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
       Following are some of my featured projects.
