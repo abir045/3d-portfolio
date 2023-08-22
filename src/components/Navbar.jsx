@@ -9,6 +9,7 @@ import close from "../assets/close.svg"
 import { useState } from 'react'
 import github from '../assets/github.svg'
 import linkedin from '../assets/linkedin.svg'
+import cv from '../assets/cv.svg'
 
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const [toggle, setToggle] = useState(false);
 
 
   return (
-    <nav className={ `${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-slate-800` }>
+    <nav className={ `${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-slate-700` }>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
        <Link 
        to="/"
@@ -80,6 +81,12 @@ const [toggle, setToggle] = useState(false);
             <img src={linkedin} className='w-[50px]' />
           </a>
           </li>
+
+          <li className='hover:bg-white'>
+          <a href='https://drive.google.com/file/d/19s3curyckE2gKBkoHRUGp0i4Tftx_0P5/view?usp=sharing' target='_blank'>
+            <img src={cv} className='w-[50px]' />
+          </a>
+          </li>
        </ul>
 
        {/* mb menu */}
@@ -133,6 +140,12 @@ const [toggle, setToggle] = useState(false);
           <li className='hover:bg-white'>
           <a href='https://www.linkedin.com/in/salekinimran/' target='_blank'>
             <img src={linkedin} className='w-[50px]' />
+          </a>
+          </li>
+
+          <li className='hover:bg-white'>
+          <a href='https://drive.google.com/file/d/19s3curyckE2gKBkoHRUGp0i4Tftx_0P5/view?usp=sharing' target='_blank'>
+            <img src={cv} className='w-[50px]' />
           </a>
           </li>
 
