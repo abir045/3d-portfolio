@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { Tilt } from 'react-tilt'
-import { github, url } from '../assets'
+import { github, url ,live } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import {fadeIn, textVariant , slideIn} from '../utils/motion'
@@ -33,33 +33,7 @@ variants={slideIn("right", "tween",  0.1,  0.5)}
   
   src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
   
-  <div className='absolute inset-0 flex space-x-2 items-start justify-end m-3 card-img_hover'
   
-  >
-  {/* source_code_link */}
-  <div 
-  onClick={() => window.open(source_code_link , "blank")}
-  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-99'
-  >
-   <img
-   src={github}
-   alt="github"
-   className='w-1/2 h-1/2 object-contain'
-   />   
-</div>
-
-{/* live url */}
-<div 
-  onClick={() => window.open(live_url , "blank")}
-  className='bg-gray-300 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer '
-  >
-   <img
-   src={url}
-   alt="live url"
-   className='w-1/2 h-1/2 rounded-full object-contain'
-   />   
-</div>
-</div>
 </div>
 
 
@@ -77,7 +51,39 @@ variants={slideIn("right", "tween",  0.1,  0.5)}
         #{tag.name}
       </p>
     ))}
+
+<div className='absolute top-[86%]  inset-0 flex space-x-5 items-start justify-end m-3 card-img_hover'
+  
+  >
+  {/* source_code_link */}
+  <div 
+  onClick={() => window.open(source_code_link , "blank")}
+  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-99'
+  >
+   <img
+   src={github}
+   alt="github"
+   className='w-[50px] object-contain'
+   />   
+</div>
+
+{/* live url */}
+<div 
+  onClick={() => window.open(live_url , "blank")}
+  className='bg-gray-300 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer '
+  >
+   <img
+   src={live}
+   alt="live url"
+   className='w-[50px]  rounded-full object-contain'
+   />   
+</div>
+</div>
+
+
   </div>
+
+  
 
  </Tilt>
 
@@ -89,33 +95,24 @@ const Works = () => {
   return (
     <>
     
-    {/* <motion.div 
-    variants={textVariant()}
-    > */}
-      
-      <div className='flex flex-col'>
+    <div className='flex flex-col'>
       <p className={styles.sectionSubText}>
       My Work
-    </p>
+      </p>
 
     <h2 className={styles.sectionHeadText}>Projects.</h2>
       </div>
     
       
-   
-
-
-    {/* </motion.div> */}
-
-    {/* <div className='flex flex-col '> */}
-      <motion.p 
-      variants={slideIn("down" ,"tween" , 0.1, 1)}
-      className='text-secondary text-[17px] max-w-3xl mb-5'
-      >
+  
+    <motion.p 
+    variants={slideIn("down" ,"tween" , 0.1, 1)}
+    className='text-secondary text-[17px] max-w-3xl mb-5'
+    >
       Following are some of my featured projects.
-       Each project is briefly descriobed with links to code repositories and live demos in it.
+      Each project is briefly descriobed with links to code repositories and live demos in it.
 
-  </motion.p>
+    </motion.p>
     {/* </div> */}
     
     <div className='grid grid-cols-1 md:grid-cols-3 gap-5 '>

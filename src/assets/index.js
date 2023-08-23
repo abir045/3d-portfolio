@@ -46,6 +46,7 @@ import pearson from "./pearson.png";
 import manage from "./manage_landing.png";
 import netflix_clone from "./netflix_clone.png";
 import laptop from './laptop.png';
+import live from  './live.svg' ;
 
 export {
   logo,
@@ -91,5 +92,6 @@ export {
   manage,
   netflix_clone,
   url,
-  laptop
+  laptop,
+  live
 };

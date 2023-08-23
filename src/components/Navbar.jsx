@@ -32,7 +32,7 @@ const [toggle, setToggle] = useState(false);
        <p className='text-white text-[18px] font-bold cursor-pointer flex '>Salekin Imran</p>
        </Link>
 
-       <ul className='list-none hidden sm:flex flex-row gap-10'>
+       <ul className='list-none hidden tracking-widest font-bold sm:flex flex-row gap-10'>
         {
           navLinks.map((link)=> {
             return (
@@ -42,7 +42,7 @@ const [toggle, setToggle] = useState(false);
               <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white  tracking-widest font-bold" : "text-secondary"
+                active === link.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer `}
               
               onClick={() => setActive(link.title)}
