@@ -52,7 +52,8 @@ variants={slideIn("right", "tween",  0.1,  0.5)}
       </p>
     ))}
 
-<div className='absolute top-[86%]  inset-0 flex space-x-5 items-center justify-end m-3 card-img_hover'
+  </div>
+  <div className='flex items-center justify-center space-x-5 my-5'
   
   >
   {/* source_code_link */}
@@ -70,7 +71,7 @@ variants={slideIn("right", "tween",  0.1,  0.5)}
 {/* live url */}
 <div 
   onClick={() => window.open(live_url , "blank")}
-  className='bg-gray-300 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-99 '
+  className='bg-gray-300 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer '
   >
    <img
    src={live}
@@ -79,10 +80,6 @@ variants={slideIn("right", "tween",  0.1,  0.5)}
    />   
 </div>
 </div>
-
-
-  </div>
-
   
 
  </Tilt>

@@ -102,7 +102,7 @@ const [toggle, setToggle] = useState(false);
 
         <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-gray-700 absolute top-20 right-0 
         mx-4 my-2 min-w-[250px] z-10 rounded `}>
-          <ul className='flex flex-col items-center mx-auto gap-10 '>
+          <ul className='flex flex-col items-center mx-auto gap-10 font-bold tracking-wide leading-5'>
         {  
           navLinks.map((link)=> {
             return (
