@@ -83,7 +83,7 @@ const [toggle, setToggle] = useState(false);
           </li>
 
           <li key="3" className='hover:bg-white'>
-          <a href='https://drive.google.com/file/d/19s3curyckE2gKBkoHRUGp0i4Tftx_0P5/view?usp=sharing' target='_blank'>
+          <a href='https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing' target='_blank'>
             <img src={cv} className='w-[50px]' />
           </a>
           </li>
@@ -144,7 +144,7 @@ const [toggle, setToggle] = useState(false);
           </li>
 
           <li key="6" className='hover:bg-white'>
-          <a href='https://drive.google.com/file/d/19s3curyckE2gKBkoHRUGp0i4Tftx_0P5/view?usp=sharing' target='_blank'>
+          <a href='https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing' target='_blank'>
             <img src={cv} className='w-[50px]' />
           </a>
           </li>
