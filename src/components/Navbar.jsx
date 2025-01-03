@@ -12,6 +12,8 @@ import linkedin from "../assets/linkedin.svg";
 import cv from "../assets/cv.svg";
 import logo2 from "../assets/scifi.png";
 import dev from "../assets/logo-dev.png";
+import desktop from "../assets/desktop.png";
+import codeLogo from "../assets/code.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -19,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-slate-700`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-slate-500`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -30,7 +32,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={dev} alt="logo" className="w-12 h-12 object-contain" />
+          <img src={codeLogo} alt="logo" className="w-14 h-14 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Salekin Imran
           </p>
@@ -43,8 +45,8 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } hover:text-white text-[18px] font-medium cursor-pointer `}
+                    active === link.title ? "text-white" : "text-primary"
+                  } hover:text-white text-[18px] font-bold cursor-pointer `}
                   onClick={() => setActive(link.title)}
                 >
                   <a href={`#${link.id}`}>{link.title} </a>
