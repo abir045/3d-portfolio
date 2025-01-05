@@ -1,13 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
 
 const Experience = () => {
   return (
-    <div>
-      <div className=" flex flex-col lg:mx-36 mx-6 md:mx-16">
-        {/* <p className={styles.sectionSubText}>Introduction</p> */}
-
+    <div className="">
+      <div className="flex flex-col ">
         <h2 className={`${styles.sectionHeadText}`}>Experience</h2>
 
         <p className={`${styles.sectionSubText} font-bold`}>Web Developer</p>
@@ -24,4 +23,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default SectionWrapper(Experience, "Experience");
