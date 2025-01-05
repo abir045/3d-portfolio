@@ -10,9 +10,9 @@ import linkedin from "../assets/linkedin.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-[200px] mx-auto">
       <div
-        className={`${styles.paddingX} absolute flex inset-0 top-[120px] max-w-7xl flex-row items-start gap-5 `}
+        className={`${styles.paddingX} absolute flex inset-0 top-[120px] max-w-7xl flex-row items-start gap-5 mx-auto`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff] " />
@@ -47,7 +47,7 @@ const Hero = () => {
             to="https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing"
             target="_blank"
           >
-            <button className="px-4 py-3 border border-black bg-[#915eff] text-white rounded-lg">
+            <button className="px-4 py-3 border border-black bg-[#915eff] text-white rounded-lg ">
               Download Resume
             </button>
           </Link>
