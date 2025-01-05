@@ -8,6 +8,9 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 
 import { slideIn } from "../utils/motion";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const formRef = useRef();
@@ -129,10 +132,32 @@ const Contact = () => {
         <div className="card bg-black-100   shadow-xl">
           <div className="card-body">
             <p className={styles.sectionHeadText}>Get in touch</p>
-            <p className="text-white mt-4">Location: Dhaka, Bangladesh</p>
-            <p className="text-white mt-2">Email: abir045@gmail.com</p>
-            <p className="text-white mt-2">Phone: +8801300663239</p>
-            <p className="text-white mt-2">Whatsapp: +8801300663239</p>
+            <p className="text-white mt-4 flex gap-2">
+              <span>
+                <FaLocationDot />
+              </span>{" "}
+              Dhaka, Bangladesh
+            </p>
+            <p className="text-white mt-2 flex gap-2 ">
+              <span>
+                <MdEmail />{" "}
+              </span>{" "}
+              abir045@gmail.com
+            </p>
+            <p className="text-white mt-2 flex gap-2">
+              {" "}
+              <span>
+                <FaPhone />
+              </span>{" "}
+              +8801300663239
+            </p>
+            <p className="text-white mt-2 flex gap-2">
+              {" "}
+              <span>
+                <FaWhatsapp />
+              </span>{" "}
+              +8801300663239
+            </p>
             <div className="card-actions justify-end">
               {/* <button className="btn btn-primary">Buy Now</button> */}
             </div>
