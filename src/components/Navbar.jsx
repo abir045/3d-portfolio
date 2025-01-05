@@ -84,15 +84,16 @@ const Navbar = () => {
             </a>
           </li>
         </ul> */}
-
-        <Link
-          to="https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing"
-          target="_blank"
-        >
-          <button className="btn-sm border border-white bg-tertiary text-white rounded-lg ml-4">
-            Download CV
-          </button>
-        </Link>
+        {/* <div className="hidden md:flex">
+          <Link
+            to="https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing"
+            target="_blank"
+          >
+            <button className="btn-sm border border-white bg-tertiary text-white rounded-lg ml-4">
+              Download CV
+            </button>
+          </Link>
+        </div> */}
 
         {/* mb menu */}
 
@@ -127,6 +128,17 @@ const Navbar = () => {
                   </li>
                 );
               })}
+
+              <div className="">
+                <Link
+                  to="https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing"
+                  target="_blank"
+                >
+                  <button className="btn-sm border border-white bg-tertiary text-white rounded-lg ml-4">
+                    Download CV
+                  </button>
+                </Link>
+              </div>
 
               {/* <li key="4" className="hover:bg-white">
                 <a href="https://github.com/abir045" target="_blank">
