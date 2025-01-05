@@ -10,7 +10,7 @@ import linkedin from "../assets/linkedin.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[200px] mx-auto">
+    <section className="relative w-full h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute flex inset-0 top-[120px] max-w-7xl flex-row items-start gap-5 mx-auto`}
       >
@@ -24,13 +24,13 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText}`}>
             Hi, I'm <span className="text-[#915eff]">Salekin</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 mb-10`}>
             I develop beautiful, modern Frontend applications.{" "}
             <br className="sm:block hidden" />{" "}
           </p>
 
-          <div className="my-5 flex gap-4">
-            <Link to="https://github.com/abir045" target="_blank">
+          <div className="my-5 flex gap-4 mb-8 ">
+            <Link to={"https://github.com/abir045"} target="_blank">
               <FaGithub size={35} />{" "}
             </Link>
 
@@ -43,14 +43,25 @@ const Hero = () => {
             </Link>
           </div>
 
-          <Link
+          {/* <Link
             to="https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing"
             target="_blank"
           >
             <button className="px-4 py-3 border border-black bg-[#915eff] text-white rounded-lg ">
               Download Resume
             </button>
-          </Link>
+          </Link> */}
+
+          <a
+            href="https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <button className="px-4 py-3 border border-black bg-[#915eff] text-white rounded-lg">
+              Download Resume
+            </button>
+          </a>
         </div>
 
         <div>
