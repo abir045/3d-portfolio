@@ -10,6 +10,7 @@ import {
   Footer,
 } from "./components";
 import { BrowserRouter } from "react-router-dom";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Hero />
         </div>
         <About />
+        <Experience />
         <Works />
         <Education />
         <Tech />
