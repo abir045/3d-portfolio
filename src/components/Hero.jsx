@@ -4,6 +4,9 @@ import { styles } from "../styles";
 // import { ComputersCanvas } from './canvas'
 import Lottie from "lottie-react";
 import animationData from "../assets/Desktop.json";
+import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import linkedin from "../assets/linkedin.jpg";
 
 const Hero = () => {
   return (
@@ -17,21 +20,55 @@ const Hero = () => {
         </div>
 
         <div>
+          <h2 className={`${styles.heroSubText} mt-5`}>Front End Developer</h2>
           <h1 className={`${styles.heroHeadText}`}>
             Hi, I'm <span className="text-[#915eff]">Salekin</span>
           </h1>
-          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            I develop beautiful, modern Frontend applications.{" "}
+            <br className="sm:block hidden" />{" "}
+          </p>
 
-          I develop Frontend applications, <br className='sm:block hidden'/> UI and web apps based on Modern technology stacks 
-        </p> */}
+          <div className="my-5 flex gap-4">
+            <Link to="https://github.com/abir045" target="_blank">
+              <FaGithub size={35} />{" "}
+            </Link>
+
+            {/* linkedin */}
+            <Link
+              to="https://www.linkedin.com/in/salekinimran/"
+              target="_blank"
+            >
+              <FaLinkedin size={35} />{" "}
+            </Link>
+          </div>
+
+          <Link
+            to="https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing"
+            target="_blank"
+          >
+            <button className="px-4 py-3 border border-black bg-[#915eff] text-white rounded-lg">
+              Download Resume
+            </button>
+          </Link>
+        </div>
+
+        <div>
+          {/* <img className="rounded-full" src={linkedin} alt="" /> */}
+
+          <motion.img
+            animate={{ y: [50, 100, 50] }}
+            transition={{ duration: 5, repeat: Infinity }}
+            src={linkedin}
+            className=" rounded-full  shadow-2xl border  border-blue-400"
+          />
         </div>
       </div>
-      {/* <ComputersCanvas /> */}
 
       {/* lottie pc animation */}
 
       <div className="flex  md:justify-center pt-[55%] md:py-[5%]">
-        <Lottie animationData={animationData} />
+        {/* <Lottie animationData={animationData} /> */}
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

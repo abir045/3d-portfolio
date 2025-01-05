@@ -34,10 +34,10 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="mt-[5%]">
-        <p className={styles.sectionSubText}>Introduction</p>
+      <motion.div variants={textVariant()} className="">
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
 
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
 
       <motion.p
@@ -47,8 +47,8 @@ const About = () => {
         I am a frontend developer with a passion to build dynamic products with
         the most updated technologies. Currently I am working as a freelance
         Developer. At the moment developing apps with React Js, Next Js,
-        Typescript, Tailwind CSS, Redux, Node Js and contributing to open source
-        in my free time. Pro Tailwind CSS
+        Tailwind CSS, Node Js and contributing to open source in my free time.
+        Pro Tailwind CSS. In my free time I like to travel, explore etc.
       </motion.p>
 
       {/* <div className='mt-20 flex flex-wrap gap-10'>

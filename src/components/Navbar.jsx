@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-slate-500`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-tertiary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -32,7 +32,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={codeLogo} alt="logo" className="w-14 h-14 object-contain" />
+          <img
+            src={codeLogo}
+            alt="logo"
+            className="w-14 h-14 object-contain bg-secondary rounded-full"
+          />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Salekin Imran
           </p>
@@ -45,7 +49,7 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-white" : "text-primary"
+                    active === link.title ? "text-secondary" : "text-white"
                   } hover:text-white text-[18px] font-bold cursor-pointer `}
                   onClick={() => setActive(link.title)}
                 >
@@ -58,7 +62,7 @@ const Navbar = () => {
 
         {/* social icons */}
 
-        <ul className="list-none  hidden sm:flex space-x-5">
+        {/* <ul className="list-none  hidden sm:flex space-x-5">
           <li key="1" className="hover:bg-white">
             <a href="https://github.com/abir045" target="_blank">
               <img src={github} className="w-[50px]" />
@@ -79,7 +83,16 @@ const Navbar = () => {
               <img src={cv} className="w-[50px]" />
             </a>
           </li>
-        </ul>
+        </ul> */}
+
+        <Link
+          to="https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing"
+          target="_blank"
+        >
+          <button className="btn-sm border border-white bg-tertiary text-white rounded-lg ml-4">
+            Download CV
+          </button>
+        </Link>
 
         {/* mb menu */}
 
@@ -94,7 +107,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-gray-700 absolute top-20 right-0 
+            } p-6 bg-tertiary absolute top-20 right-0 
         mx-4 my-2 min-w-[250px] z-10 rounded `}
           >
             <ul className="flex flex-col items-center mx-auto gap-10 font-bold tracking-wide leading-5">
@@ -103,7 +116,7 @@ const Navbar = () => {
                   <li
                     key={link.id}
                     className={`${
-                      active === link.title ? "text-white" : "text-secondary"
+                      active === link.title ? "text-secondary" : "text-white"
                     } font-poppins text-base font-medium cursor-pointer `}
                     onClick={() => {
                       setToggle(!toggle);
@@ -115,7 +128,7 @@ const Navbar = () => {
                 );
               })}
 
-              <li key="4" className="hover:bg-white">
+              {/* <li key="4" className="hover:bg-white">
                 <a href="https://github.com/abir045" target="_blank">
                   <img src={github} className="w-[50px]" />
                 </a>
@@ -137,7 +150,7 @@ const Navbar = () => {
                 >
                   <img src={cv} className="w-[50px]" />
                 </a>
-              </li>
+              </li> */}
             </ul>
 
             {/* <div > */}

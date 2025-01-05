@@ -37,9 +37,11 @@ import {
   netflix_clone,
   crypto,
   laptop,
-
-  
 } from "../assets";
+
+import lingo from "../assets/lingo.png";
+import visa from "../assets/visa.png";
+import book from "../assets/book.png";
 
 export const navLinks = [
   {
@@ -54,11 +56,7 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
-
-  
 ];
-
-
 
 const technologies = [
   {
@@ -196,8 +194,6 @@ const educations = [
   },
 ];
 
-
-
 const projects = [
   {
     name: "Laptop Recommendation System",
@@ -238,10 +234,29 @@ const projects = [
     source_code_link: "https://github.com/abir045/coffeeroasters",
     live_url: "https://coffeeroasters-abir045.vercel.app/",
   },
+  // {
+  //   name: "Photosnap ",
+  //   description:
+  //     " A Multipage Web application that enables users to share photos",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: photosnap,
+  //   source_code_link: "https://github.com/abir045/photosnap",
+  //   live_url: "https://photosnap-abir045.vercel.app/",
+  // },
+
   {
-    name: "Photosnap ",
+    name: "Visa Navigator",
     description:
-      " A Multipage Web application that enables users to share photos",
+      " A Single Page Web application that enables users browse through different type of visa's , apply and track applications",
     tags: [
       {
         name: "react",
@@ -251,10 +266,22 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "firebase",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express JS",
+        color: "pink-text-gradient",
+      },
     ],
-    image: photosnap,
-    source_code_link: "https://github.com/abir045/photosnap",
-    live_url: "https://photosnap-abir045.vercel.app/",
+    image: visa,
+    source_code_link: "https://github.com/abir045/visa-navigator-client",
+    live_url: "https://visa-navigator-d10af.web.app/",
   },
   {
     name: "CryptoWorld",
@@ -278,13 +305,35 @@ const projects = [
     source_code_link: "https://github.com/abir045/cryptoApp",
     live_url: "https://world-of-crypto.netlify.app/",
   },
+  // {
+  //   name: "Pearson Airport Limousiness",
+  //   description:
+  //     "A limousine rental app  that allows users to book a limousine to and fro to  Pearson Airport Toronto.",
+  //   tags: [
+  //     {
+  //       name: "Express JS",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "googleapis",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: pearson,
+  //   source_code_link: "https://github.com/abir045/LomousineTours",
+  // },
+
   {
-    name: "Pearson Airport Limousiness",
+    name: "Library Management System - Book World",
     description:
-      "A limousine rental app  that allows users to book a limousine to and fro to  Pearson Airport Toronto.",
+      "In this website users can browse through collection of books, they can borrow a book for reading, they can return the book after reading. A user can also add a book and update a book.",
     tags: [
       {
-        name: "Express JS",
+        name: "React JS",
         color: "blue-text-gradient",
       },
       {
@@ -292,39 +341,27 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "googleapis",
+        name: "Express JS",
         color: "pink-text-gradient",
       },
+      {
+        name: "Firebase",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "blue-text-gradient",
+      },
     ],
-    image: pearson,
-    source_code_link: "https://github.com/abir045/LomousineTours",
+    image: book,
+    source_code_link:
+      "https://github.com/abir045/library-management-system-client",
   },
 
-  // {
-  //   name: "Manage Landing Page",
-  //   description: "A Frontend Mentor challenge landing page from figma design.",
-  //   tags: [
-  //     {
-  //       name: "JS",
-  //       color: "blue-text-gradient",
-  //     },
-
-  //     {
-  //       name: "tailwind",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: manage,
-  //   source_code_link:
-  //     "https://github.com/abir045/frontend-mentor-manage-landing-react-tailwind",
-
-  //   live_url:
-  //     "https://frontend-mentor-manage-landing-react-tailwind.vercel.app/",
-  // },
-
   {
-    name: "Netflix UI clone",
-    description: "Netflix UI clone with React and Tailwind CSS.",
+    name: "Lingo Bingo",
+    description:
+      "This  is a language learning single page application with authentication",
     tags: [
       {
         name: "React",
@@ -332,26 +369,43 @@ const projects = [
       },
 
       {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-
-      {
-        name: "tailwind",
+        name: "tailwind CSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "Firebase",
+        color: "blue-text-gradient",
+      },
     ],
-    image: netflix_clone,
-    source_code_link: "https://github.com/abir045/Netflix_React_Tailwind",
-    live_url: "https://github.com/abir045/Netflix_React_Tailwind",
+    image: lingo,
+    source_code_link: "https://github.com/abir045/lingo-bingo",
+
+    live_url: "https://lingo-bingo-6cead.web.app/",
   },
+
+  // {
+  //   name: "Netflix UI clone",
+  //   description: "Netflix UI clone with React and Tailwind CSS.",
+  //   tags: [
+  //     {
+  //       name: "React",
+  //       color: "blue-text-gradient",
+  //     },
+
+  //     {
+  //       name: "firebase",
+  //       color: "green-text-gradient",
+  //     },
+
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: netflix_clone,
+  //   source_code_link: "https://github.com/abir045/Netflix_React_Tailwind",
+  //   live_url: "https://github.com/abir045/Netflix_React_Tailwind",
+  // },
 ];
 
-export {
-  
-  technologies,
-  educations,
-  experiences,
-  
-  projects,
-};
+export { technologies, educations, experiences, projects };
