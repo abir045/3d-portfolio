@@ -16,14 +16,14 @@ const ProjectCard = ({
   source_code_link,
   live_url,
 }) => (
-  <motion.div variants={slideIn("right", "tween", 0.1, 0.5)}>
+  <motion.div variants={slideIn("right", "tween", 0.1, 0.5)} className="h-full">
     <Tilt
       options={{
         max: 45,
         scale: 1,
         speed: 450,
       }}
-      className="bg-tertiary p-5 rouded-2xl  w-full"
+      className="bg-tertiary p-5 rounded-2xl  w-full h-full"
     >
       <div className="relative w-full h-[300px]">
         <img
@@ -99,3 +99,7 @@ const Works = () => {
 };
 
 export default SectionWrapper(Works, "work");
+
+/**
+ *
+ */

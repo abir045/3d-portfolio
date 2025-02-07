@@ -42,6 +42,7 @@ import {
 import lingo from "../assets/lingo.png";
 import visa from "../assets/visa.png";
 import book from "../assets/book.png";
+import esporta from "../assets/esporta.png";
 
 export const navLinks = [
   {
@@ -196,9 +197,9 @@ const educations = [
 
 const projects = [
   {
-    name: "Laptop Recommendation System",
+    name: "E-Sporta",
     description:
-      "A Web-based platform that allows users to search and find laptops according to their requirements from two local vendors (Ryans & StarTech), providing a convenient and efficient solution.",
+      "Welcome to the E-Sporta. This is a platform dedicated to connecting users with fitness trainers and classes. Built with modern tools and frameworks, this app offers an intuitive user experience.",
     tags: [
       {
         name: "react",
@@ -206,14 +207,46 @@ const projects = [
       },
 
       {
-        name: "tailwind",
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express JS",
         color: "pink-text-gradient",
       },
+      {
+        name: "Firebase",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "blue-text-gradient",
+      },
     ],
-    image: laptop,
-    source_code_link: "https://github.com/abir045/Laptop-Recommendation-System",
-    live_url: "https://laptop-recommendation-system.vercel.app/",
+    image: esporta,
+    source_code_link: "https://github.com/abir045/e-sporta-client",
+    live_url: "https://esporta-e9ef7.web.app/",
   },
+
+  // {
+  //   name: "Laptop Recommendation System",
+  //   description:
+  //     "A Web-based platform that allows users to search and find laptops according to their requirements from two local vendors (Ryans & StarTech), providing a convenient and efficient solution.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: laptop,
+  //   source_code_link: "https://github.com/abir045/Laptop-Recommendation-System",
+  //   live_url: "https://laptop-recommendation-system.vercel.app/",
+  // },
 
   {
     name: "Coffeeroasters",

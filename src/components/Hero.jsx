@@ -31,7 +31,7 @@ const Hero = () => {
 
           <div className="my-5 flex gap-4 mb-8 ">
             <Link to={"https://github.com/abir045"} target="_blank">
-              <FaGithub size={35} />{" "}
+              <FaGithub size={35} className="text-white" />{" "}
             </Link>
 
             {/* linkedin */}
@@ -39,7 +39,7 @@ const Hero = () => {
               to="https://www.linkedin.com/in/salekinimran/"
               target="_blank"
             >
-              <FaLinkedin size={35} />{" "}
+              <FaLinkedin size={35} className="text-white" />{" "}
             </Link>
           </div>
 
