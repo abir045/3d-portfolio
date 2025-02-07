@@ -8,6 +8,8 @@ import N from "../assets/node.json";
 import github from "../assets/git.json";
 import next from "../assets/next.json";
 import figma from "../assets/figma.json";
+import mongo from "../assets/mongo.json";
+import firebase from "../assets/firebase.json";
 import { styles } from "../styles";
 
 const Tech = () => {
@@ -19,9 +21,11 @@ const Tech = () => {
         <Lottie animationData={css} className="w-[150px]" />
         <Lottie animationData={R} className="w-[150px]" />
         <Lottie animationData={N} className="w-[200px] " />
-        <Lottie animationData={github} className="w-[150px]" />
-        <Lottie animationData={next} className="w-[150px]" />
-        <Lottie animationData={figma} className="w-[120px]  " />
+        {/* <Lottie animationData={github} className="w-[150px]" /> */}
+        <Lottie animationData={firebase} className="w-[150px]" />
+        <Lottie animationData={next} className="w-[150px] " />
+        {/* <Lottie animationData={figma} className="w-[120px]  " /> */}
+        <Lottie animationData={mongo} className="w-[120px]  " />
       </div>
     </div>
   );

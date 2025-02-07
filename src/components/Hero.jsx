@@ -53,10 +53,10 @@ const Hero = () => {
           </Link> */}
 
           <a
-            href="https://drive.google.com/file/d/1R7pTf9sU1D2NBIYMTtVQvUHMpOuWCVNP/view?usp=sharing"
+            href="https://drive.google.com/file/d/1sjPhU2t7SCSD8xIR485pCyVmDi-9J8iC/view"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block"
+            // className="inline-block"
           >
             <button className="px-4 py-3 border border-black bg-[#915eff] text-white rounded-lg">
               Download Resume
@@ -74,32 +74,31 @@ const Hero = () => {
             className=" rounded-full  shadow-2xl border  border-blue-400"
           />
         </div>
+
+        {/* <div className="absolute xs:bottom-10 bottom-24 w-full flex justify-center items-center">
+          <a href="#about">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-center p-2">
+              <motion.div
+                animate={{
+                  y: [0, 24, 0],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className="w-3 h-3 rounded-full bg-secondary mb-1"
+              />
+            </div>
+          </a>
+        </div> */}
       </div>
 
       {/* lottie pc animation */}
 
-      <div className="flex  md:justify-center pt-[55%] md:py-[5%]">
-        {/* <Lottie animationData={animationData} /> */}
-      </div>
-
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about">
-          {/* scroll down button */}
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-center p-2">
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
-          </div>
-        </a>
-      </div>
+      {/* <div className="flex  md:justify-center pt-[55%] md:py-[5%]">
+        <Lottie animationData={animationData} />
+      </div> */}
     </section>
   );
 };
