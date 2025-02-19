@@ -53,7 +53,7 @@ const Hero = () => {
           </Link> */}
 
           <a
-            href="https://drive.google.com/file/d/1sjPhU2t7SCSD8xIR485pCyVmDi-9J8iC/view"
+            href="https://drive.google.com/file/d/17IxAuEyielNVjZTjqPxr2bsJxS8FWsqK/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             // className="inline-block"
